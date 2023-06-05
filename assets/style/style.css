@@ -76,11 +76,17 @@ body {
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+    animation: slide-back .2s;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+    /* right: 0;
+    left: initial; */
+    animation: slide-in .2s forwards;
 }
 
 #switch span {
@@ -151,10 +157,30 @@ footer {
 
 @media (min-width: 700px) {
     :root {
-        --background-url: url(/assets/images/bg-dekstop-dark.png);
+        --background-url: url(/assets/images/bg-desktop-dark.png);
     }
 
     .light {
         --background-url: url(/assets/images/bg-desktop-light.png);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
     }
 }
