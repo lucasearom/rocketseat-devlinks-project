@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>DevLinks</title>
 </head>
 
@@ -23,13 +26,47 @@
         </div>
         <ul>
             <li>
-                <a href="https://github.com/lucasearom" target="_blank">Ver meu portfólio</a>
+                <!-- <a href="https://github.com/lucasearom" target="_blank">Ver meu portfólio</a> -->
+                <a class="link-modal" onclick="toggleModal()" type="button">Sobre Mim</a>
+                <div class="modal-background" onclick="toggleModal()"></div>
+                <div class="modal">
+                    <h2>Sobre Mim</h2>
+                    <p>
+                        Olá, chamo-me Lucas Moraes e tenho 23 anos. Sou, atualmente, estudante de Desenvolvimento de
+                        Sistemas pela ETEC de Barueri. O curso me mostrou o quão interessante é a área de Front-end, na
+                        qual eu pretendo expandir meu conhecimento e, num futuro breve, aplicar.
+                        Sou uma pessoa de fácil convível, centrado e organizado. Como profissional, acresento a
+                        resiliência, a observação e facilidade de aprendizagem.
+                        Em meu tempo livre sempre busco ouvir alguma música/álbum. Posso adicionar também o meu gosto
+                        por filmes e séries, não abro mão de uma boa história ou uma excelente cinematográfia.
+                    </p>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/lucas-moraes-1125091a1/" target="_blank">Linkedin</a>
+                <!-- <a href="https://www.linkedin.com/in/lucas-moraes-1125091a1/" target="_blank">Linkedin</a> -->
+                <a class="link-modal" onclick="toggleModal()" type="button">Conhecimento</a>
+                <div class="modal-background" onclick="toggleModal()"></div>
+                <div class="modal">
+                    <h2>Conhecimento</h2>
+                    <p>
+                    </p>
             </li>
             <li>
-                <a href="mailto:lucasmoraes211@gmail.com" target="_blank">E-mail</a>
+                <!-- <a href="mailto:lucasmoraes211@gmail.com" target="_blank">E-mail</a> -->
+            </li>
+            <li>
+                <a class="link-modal" onclick="toggleModal()" type="button">Sobre Mim</a>
+                <div class="modal-background" onclick="toggleModal()"></div>
+                <div class="modal">
+                    <h2>Sobre Mim</h2>
+                    <p>
+                        Olá, chamo-me Lucas Moraes e tenho 23 anos. Sou, atualmente, estudante de Desenvolvimento de
+                        Sistemas pela ETEC de Barueri. O curso me mostrou o quão interessante é a área de Front-end, na
+                        qual eu pretendo expandir meu conhecimento e, num futuro breve, aplicar.
+                        Sou uma pessoa de fácil convível, centrado e organizado. Como profissional, acresento a
+                        resiliência, a observação e facilidade de aprendizagem.
+                        Em meu tempo livre sempre busco ouvir alguma música/álbum. Posso adicionar também o meu gosto
+                        por filmes e séries, não abro mão de uma boa história ou uma excelente cinematográfia.
+                    </p>
             </li>
         </ul>
         <div id="socil-links">
@@ -52,6 +89,20 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="/assets/javascript/script.js"></script>
+
+    <script>
+        const toggleModal = () => {
+            const bodyClassList = document.body.classList;
+
+            if (bodyClassList.contains("open")) {
+                bodyClassList.remove("open");
+                bodyClassList.add("closed");
+            } else {
+                bodyClassList.remove("closed");
+                bodyClassList.add("open");
+            }
+        };
+    </script>
 </body>
 
 </html>
