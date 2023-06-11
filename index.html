@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>DevLinks</title>
 </head>
 
@@ -26,7 +27,6 @@
         </div>
         <ul>
             <li>
-                <!-- <a href="https://github.com/lucasearom" target="_blank">Ver meu portfólio</a> -->
                 <a class="link-modal" onclick="toggleModal()" type="button">Sobre Mim</a>
                 <div class="modal-background" onclick="toggleModal()"></div>
                 <div class="modal">
@@ -42,46 +42,42 @@
                     </p>
             </li>
             <li>
-                <!-- <a href="https://www.linkedin.com/in/lucas-moraes-1125091a1/" target="_blank">Linkedin</a> -->
-                <a class="link-modal" onclick="toggleModal()" type="button">Conhecimento</a>
-                <div class="modal-background" onclick="toggleModal()"></div>
-                <div class="modal">
-                    <h2>Conhecimento</h2>
-                    <p>
-                    </p>
+                <a href="https://github.com/lucasearom" target="_blank">Portfólio</a>
             </li>
             <li>
-                <!-- <a href="mailto:lucasmoraes211@gmail.com" target="_blank">E-mail</a> -->
+                <a href="https://www.linkedin.com/in/lucas-moraes-1125091a1/" target="_blank">Linkedin</a>
             </li>
             <li>
-                <a class="link-modal" onclick="toggleModal()" type="button">Sobre Mim</a>
-                <div class="modal-background" onclick="toggleModal()"></div>
-                <div class="modal">
-                    <h2>Sobre Mim</h2>
-                    <p>
-                        Olá, chamo-me Lucas Moraes e tenho 23 anos. Sou, atualmente, estudante de Desenvolvimento de
-                        Sistemas pela ETEC de Barueri. O curso me mostrou o quão interessante é a área de Front-end, na
-                        qual eu pretendo expandir meu conhecimento e, num futuro breve, aplicar.
-                        Sou uma pessoa de fácil convível, centrado e organizado. Como profissional, acresento a
-                        resiliência, a observação e facilidade de aprendizagem.
-                        Em meu tempo livre sempre busco ouvir alguma música/álbum. Posso adicionar também o meu gosto
-                        por filmes e séries, não abro mão de uma boa história ou uma excelente cinematográfia.
-                    </p>
+                <a href="mailto:lucasmoraes211@gmail.com">E-mail</a>
+            </li>
+            <li>
             </li>
         </ul>
-        <div id="socil-links">
-            <a href="https://github.com/lucasearom" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a href="https://www.linkedin.com/in/lucas-moraes-1125091a1/" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="mailto:lucasmoraes211@gmail.com">
-                <ion-icon name="mail-outline"></ion-icon>
-            </a>
+        <div id="skill">
+            <div id="skill-text">
+                <p>Habilidades &#40;em desenvolvimento&#41;</p>
+            </div>
+            <div id="skill-icon">
+                <a href="#">
+                    <ion-icon name="logo-html5"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-css3"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-python"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-figma"></ion-icon>
+                </a>
+            </div>
+            
         </div>
         <footer>
-            Feito com &#128156 por Lucas Moraes
+            Feito com &#128156; por Lucas Moraes
         </footer>
     </div>
 
@@ -90,7 +86,7 @@
 
     <script src="/assets/javascript/script.js"></script>
 
-    <script>
+     <script>
         const toggleModal = () => {
             const bodyClassList = document.body.classList;
 
