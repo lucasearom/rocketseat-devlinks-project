@@ -1,7 +1,7 @@
 <h1 align="center"> Projeto DevLinks </h1>
 
 <p align="center">
-  <img alt="Projeto DevLinks" src="" width="100%">
+  <img alt="Projeto DevLinks" src="assets/images/Wireframe.png" width="100%">
 </p>
 
 ## 💻 Descrição do projeto
